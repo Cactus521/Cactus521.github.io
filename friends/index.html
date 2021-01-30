@@ -30,6 +30,15 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <!-- 数学公式 -->
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css"
+        integrity="sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"
+        integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"
+        integrity="sha384-aGfk5kvhIq5x1x5YdvCp4upKZYnA8ckafviDpmWEKp4afOZEqOli7gqSnh8I6enH" crossorigin="anonymous">
+        </script>
+    
     
 </head>
 <style>
@@ -82,7 +91,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://cactus521.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://cactus521.github.io/images/avatar.png?v=1611987371653" class="avatar">
+            <img src="https://cactus521.github.io/images/avatar.png?v=1611987551342" class="avatar">
         </div>
         <div class="sitename">Gridea</div>
         <span class="describtion" data-text='["温故而知新"]'>&nbsp;</span>
@@ -145,6 +154,10 @@
     </div>
     
     
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://cactus521.github.io/talk" class="menubutton">说说</a>
+    </div>
     
     
     <div class="mchocie describtion">
@@ -442,7 +455,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://cactus521.github.io/images/avatar.png?v=1611987371653">\
+                        <img class="intro1" src="https://cactus521.github.io/images/avatar.png?v=1611987551342">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -455,7 +468,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://cactus521.github.io/images/avatar.png?v=1611987371653">\
+                        <img class="intro1" src="https://cactus521.github.io/images/avatar.png?v=1611987551342">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -895,6 +908,8 @@
         </li>
         
         
+        
+        <li><a data-pjax href="https://cactus521.github.io/talk">说说</a></li>
         
           
         <li><a data-pjax href="https://cactus521.github.io/friends">友链</a></li>
